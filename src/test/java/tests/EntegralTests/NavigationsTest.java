@@ -23,5 +23,9 @@ public class NavigationsTest extends TestBase {
         basePage.navigateTo("Company","Support");
     }
 
-
+    @Test(description = "Navigate to ")
+    public void test3(){
+        BasePage basePage = new BasePage();
+        basePage.navigateTo("Company","Careers");
+    }
 }
