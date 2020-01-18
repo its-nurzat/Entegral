@@ -15,9 +15,9 @@ import utils.Driver;
 import java.io.IOException;
 
 public class TestBase {
-    protected ExtentReports extentReports;
-    protected ExtentHtmlReporter extentHtmlReporter;
-    protected ExtentTest extentTest;
+    protected static ExtentReports extentReports;
+    protected static ExtentHtmlReporter extentHtmlReporter;
+    protected static ExtentTest extentTest;
 
     @BeforeTest
     public void beforeTest() {
