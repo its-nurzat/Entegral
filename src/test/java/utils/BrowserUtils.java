@@ -6,14 +6,22 @@ import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
+import java.util.NoSuchElementException;
+
+import static java.time.Duration.*;
 
 public class BrowserUtils {
+
+
     public static void wait(int Seconds) {
         try {
             Thread.sleep(1000 * Seconds);
@@ -38,6 +46,7 @@ public class BrowserUtils {
             }
         }
     }
+
 
     public static String getScreenshot(String name) {
         // name the screenshot with the current date time to avoid duplicate name
